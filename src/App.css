@@ -75,3 +75,19 @@
 .fullCard h1 {
     font-size: 70px;
 }
+
+@media only screen and (max-width: 786px) {
+    .card{
+        width: 100%;
+
+    }
+    
+
+
+.hero {
+    height: 100%;
+
+} 
+
+
+}
