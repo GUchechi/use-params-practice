@@ -9,30 +9,30 @@ function App() {
   const data = [
     {
       title: 'HTML',
-      desc: 'THis is a html'
+      description: 'THis is a html'
     },
 
     {
       title: 'CSS',
-      desc: 'THis is a css'
+      description: 'THis is a css'
     },
 
     {
       title: 'JavaScript',
-      desc: 'THis is a javascript'
+      description: 'THis is a javascript'
     },
     {
       title: 'React',
-      desc: 'THis is a react'
+      description: 'THis is a react'
     },
     {
       title: 'VUE',
-      desc: 'THis is a vue'
+      description: 'THis is a vue'
     },
 
     {
       title: 'Angular',
-      desc: 'THis is a angular'
+      description: 'THis is a angular'
     },
   ]
 
@@ -40,8 +40,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route  exact path="/" element={<Hero />}/>
-        <Route path="/fullcard" element= {<FullCard />} />
+        <Route  exact path="/" element={<Hero data={data}/>}/>
+        <Route path="/cards/:title" element= {<FullCard data={data}/>} />
       </Routes>
     </Router>
   );

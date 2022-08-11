@@ -1,11 +1,11 @@
 import React from 'react'
 import Card from './Card'
 
-const Hero = () => {
+const Hero = ({data}) => {
   return (
     <section className="hero">
         <div className="container">
-            <Card />
+            <Card data={data} />
         </div>
     </section>
   )
