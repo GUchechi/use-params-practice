@@ -1,4 +1,9 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
+import FullCard from './Components/FullCard';
+import Hero from './Components/Hero';
+
 
 function App() {
   const data = [
@@ -8,34 +13,37 @@ function App() {
     },
 
     {
-      title: 'HTML',
-      desc: 'THis is a html'
+      title: 'CSS',
+      desc: 'THis is a css'
     },
 
     {
-      title: 'HTML',
-      desc: 'THis is a html'
+      title: 'JavaScript',
+      desc: 'THis is a javascript'
     },
     {
-      title: 'HTML',
-      desc: 'THis is a html'
+      title: 'React',
+      desc: 'THis is a react'
     },
     {
-      title: 'HTML',
-      desc: 'THis is a html'
+      title: 'VUE',
+      desc: 'THis is a vue'
     },
 
     {
-      title: 'HTML',
-      desc: 'THis is a html'
+      title: 'Angular',
+      desc: 'THis is a angular'
     },
   ]
 
 
   return (
-    <div className="App">
-      <h1>Hello</h1>
-    </div>
+    <Router>
+      <Routes>
+        <Route  exact path="/" element={<Hero />}/>
+        <Route path="/fullcard" element= {<FullCard />} />
+      </Routes>
+    </Router>
   );
 }
 

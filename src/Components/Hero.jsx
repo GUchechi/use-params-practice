@@ -4,7 +4,9 @@ import Card from './Card'
 const Hero = () => {
   return (
     <section className="hero">
-        <Card />
+        <div className="container">
+            <Card />
+        </div>
     </section>
   )
 }

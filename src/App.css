@@ -4,9 +4,9 @@
     padding: 0;
 }
 
-.section {
+ section {
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
 }
 
@@ -16,7 +16,7 @@
     margin: auto;
 }
 
-.her0 {
+.hero {
     background: #445688 ;
 } 
 
@@ -66,8 +66,8 @@
     height: 500px;
     background: #445688;
     color: #fff;
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
